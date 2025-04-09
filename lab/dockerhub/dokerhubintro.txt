@@ -1,0 +1,31 @@
+What is Docker Hub?
+Docker Hub is a cloud-based registry for storing and sharing Docker images, similar to GitHub for code. It allows users to push their custom images for others to pull and use.
+Create an account at Docker Hub to share your work. It’s free and supports public repositories for collaboration.
+
+Benefits of Docker Hub:
+Access to a wide range of pre-built images for common applications (e.g., databases, web servers).
+Easy collaboration by sharing custom images with peers.
+Simplifies deployment by allowing you to use tested, reliable images.
+
+Lab: Pull and Use Images from Docker Hub 
+Pull an Image from Docker Hub:
+Go to Docker Hub and search for an image, e.g., ubuntu.
+Open a terminal or command prompt.
+
+Run: docker pull ubuntu
+
+This downloads the Ubuntu image from Docker Hub.
+
+Run a Container from the Pulled Image:
+
+Run: docker run -it ubuntu bash
+
+This starts a new container from the Ubuntu image and opens a bash shell inside it.
+
+You can run commands like ls, pwd to explore the Ubuntu environment.
+
+Experiment with Another Image:
+Pull another popular image, such as nginx (a web server).
+Run: docker pull nginx
+Then run: docker run -p 8080:80 nginx
+Open a browser and go to [localhost:8080]([invalid url, do not cite]) to see the default Nginx page.
